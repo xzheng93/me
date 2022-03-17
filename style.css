@@ -1,0 +1,92 @@
+header {
+	text-align: center;
+	background-color: rgb(245, 245, 245);
+	height: 800px;
+	width: 420px;
+	padding-top: 50px;
+}
+
+.circularimg {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin-top: 0px;
+}
+
+h1 {
+	font-family: urbainst;
+	font-weight: 300;
+	font-size: 36px;
+}
+
+.tagbox1 {
+	width: 82px;
+	height: 30px;
+	border: 1px solid #000000;
+	border-radius: 45px;
+	font-size: 6px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.tagbox2 {
+	width: 160px;
+	height: 30px;
+	border: 1px solid #000000;
+	border-radius: 45px;
+	font-size: 6px;
+	margin-top: -32px;
+	margin-left: 110px;
+	margin-right: 10px;
+}
+
+.tagbox3 {
+	width: 140px;
+	height: 30px;
+	border: 1px solid #000000;
+	border-radius: 45px;
+	font-size: 6px;
+	margin-top: -32px;
+	margin-left: 280px;
+	margin-right: 10px;
+}
+
+button {
+	border: 1px solid #000000;
+	border-radius: 45px;
+	margin-top: 10px;
+}
+
+button a {
+	text-decoration: none;
+}
+
+button img {
+	width: 10px;
+}
+
+
+.PersonalProfile {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.icon img {
+	width: 20px;
+}
+
+main {
+	text-align: center;
+	background-color: rgb(220, 220, 220);
+	height: 800px;
+	width: 604px;
+	padding-top: 50px;
+	margin-top: -850px;
+	margin-left: 420px;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+}
