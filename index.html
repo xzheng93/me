@@ -3,47 +3,160 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Xiaoping Zheng </title>
+	<title>Xiaoping Zheng</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 	<div class="container">
-		<header>
+		<!-- 个人简介栏 -->
+		<div class="box1">
+			<img class="self-portrait" src="images/IMG_3282.png">
 			<h1>XIAOPING ZHENG</h1>
-
-			<img class="circularimg" src="images/IMG_3282.png" alt="self- portrait">
-
-			<div class="tagbox1">
-				<p>PHD Student</p>
-			</div>
-			<div class="tagbox2">
-				<p>Human Movement Science</p>
-			</div>
-			<div class="tagbox3">
-				<p>University of Groningen</p>
-			</div>
-			
+			<div class="tag">PHD Student</div>
+			<div class="tag">University of Groningen</div>
+			<div class="tag">Human Movement Science</div>
 			<button>
-				<img src="images/emailblack.png">
-				<a href="mailto:x.zheng@umcl.com">work with me</a>
+				<img src="images/outline_textsms_white_36dp.png">
+				<a href="mailto:x.zheng@umcl.com">&nbsp Work With Me</a>
 			</button>
-
 			<p class="PersonalProfile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-			<div class="icon">
-				<img src="images/rugpersonal.png">
-				<img src="images/googlescholar.png">
+			<div class="icons">
+				<a href="https://research.rug.nl/en/persons/xiaoping-zheng/" target="_blank"><img src="images/rugpersonal.png"></a>
+				<a href="https://scholar.google.com/citations?user=vwc44dEAAAAJ&hl=zh-CN&oi=sra" target="_blank"><img src="images/googlescholar.png"></a>
 			</div>
+		</div>
 
-		</header>
 
-		<main>
-			<h1>Welcome to my portfolio.</h1>
+		<!-- 论文栏 -->
+		<div class="box2">
+			<h1>Hello!</h1>
+			<h2>Welcome to my portfolio</h2>
+			<ul>
+				<li class="active"><a href="#section-journal">Journals</a></li>
+				<li><a href="#section-conference">Conferences</a></li>
+			</ul>
+			<div id="section-journal" class="journalbox tab-content">
+				<div class="card">
+					<div class="slider-outer">
+						<div class="prev1"></div>
+						<div class="slider-inner">
+							<img src="images/journal1-1.png" class="imgActive1">
+							<img src="images/journal1-2.png">
+							<img src="images/journal1-3.png">
+						</div>
+						<div class="next1"></div>
+					</div>
 			
-		</main>
-		
+					<div class="content">
+						<a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=vwc44dEAAAAJ&sortby=pubdate&citation_for_view=vwc44dEAAAAJ:Y0pCki6q_DkC" target="_blank">Association between central sensitization and gait in chronic low back pain: Insights from a machine learning approach</a>
+						<p>X Zheng, MF Reneman, JA Echeita, RHRS Preuper, H Kruitbosch, E Otten, ...</p>
+						<p>Computers in biology and medicine 144, 105329</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="slider-outer">
+						<div class="prev2"></div>
+						<div class="slider-inner">
+							<img src="images/journal1-1.png" class="imgActive2">
+							<img src="images/journal1-2.png">
+							<img src="images/journal1-3.png">
+						</div>
+						<div class="next2"></div>
+					</div>
+
+					<div class="content">
+						<a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=vwc44dEAAAAJ&sortby=pubdate&citation_for_view=vwc44dEAAAAJ:9yKSN-GCB0IC" target="_blank">Path distance-based map matching for Wi-Fi fingerprinting positioning</a>
+						<p>P Chen, X Zheng, F Gu, J Shang</p>
+						<p>Future Generation Computer Systems 107, 82-94</p>
+					</div>
+				</div>
+
+			</div>
+			<div id="section-conference" class="conferencebox tab-content">
+				<div class="card">
+					<div class="imgBx">
+						<img src="images/journal1-1.png">
+					</div>
+					<div class="content">
+						<a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=vwc44dEAAAAJ&sortby=pubdate&citation_for_view=vwc44dEAAAAJ:Tyk-4Ss8FVUC" target="_blank">Establishing Central Sensitization Inventory Cutoff-Scores in Chronic Low Back Pain Population by Deep Learning</a>
+						<p>X Zheng, C Lamoth, B Otten, M Reneman</p>
+						<p>PAIN Congres 2021</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', 'ul li', function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('ul:first').addClass('active');
+			$('.tab-content:not(:first)').hide();
+			$('ul li a').click(function (event) {
+				event.preventDefault();
+				var content = $(this).attr('href');
+				$(this).parent().addClass('active');
+				$(this).parent().siblings().removeClass('active');
+				$(content).show();
+				$(content).siblings('.tab-content').hide();
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.next1').on('click',function(){
+				var currentImg = $('.imgActive1');
+				var nextImg = currentImg.next();
+
+				if (nextImg.length) {
+					currentImg.removeClass('imgActive1').css('z-index', -10);
+					nextImg.addClass('imgActive1').css('z-index', 10);
+				}
+			});
+
+			$('.prev1').on('click',function(){
+				var currentImg = $('.imgActive1');
+				var prevImg = currentImg.prev();
+
+				if (prevImg.length) {
+					currentImg.removeClass('imgActive1').css('z-index', -10);
+					prevImg.addClass('imgActive1').css('z-index', 10);
+				}
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.next2').on('click',function(){
+				var currentImg = $('.imgActive2');
+				var nextImg = currentImg.next();
+
+				if (nextImg.length) {
+					currentImg.removeClass('imgActive2').css('z-index', -10);
+					nextImg.addClass('imgActive2').css('z-index', 10);
+				}
+			});
+
+			$('.prev2').on('click',function(){
+				var currentImg = $('.imgActive2');
+				var prevImg = currentImg.prev();
+
+				if (prevImg.length) {
+					currentImg.removeClass('imgActive2').css('z-index', -10);
+					prevImg.addClass('imgActive2').css('z-index', 10);
+				}
+			});
+		})
+	</script>
 	
 </body>
 </html>
