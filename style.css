@@ -399,6 +399,18 @@ ul li.active a{
 		padding: 15px 15px;
 		margin-left: -20px;
 	}
+	.prev2{
+		top: 25%;
+	}
+	.next2{
+		top: 25%;
+	}
+	.prev1{
+		top: 25%;
+	}
+	.next1{
+		top: 25%;
+	}
 }
 
 @media (max-width: 40em){
