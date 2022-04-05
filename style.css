@@ -326,6 +326,7 @@ ul li.active a{
 		top: 35%;
 	}
 }
+
 @media (max-width: 800px){
 	.container{
 		flex-direction: column;
@@ -356,7 +357,7 @@ ul li.active a{
 	.journalbox .card{
 		flex-direction: column;
 		align-items: center;
-		max-width: 310px;
+		max-width: 300px;
 		margin-left: auto;
 		margin-right: auto;
 		height: 420px;
@@ -365,7 +366,7 @@ ul li.active a{
 	.conferencebox .card{
 		flex-direction: column;
 		align-items: center;
-		max-width: 310px;
+		max-width: 300px;
 		margin-left: auto;
 		margin-right: auto;
 		height: 420px;
@@ -399,6 +400,7 @@ ul li.active a{
 		margin-left: -20px;
 	}
 }
+
 @media (max-width: 40em){
 	.journalbox{
 		flex-wrap: wrap;
