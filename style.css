@@ -1,5 +1,7 @@
 
-
+body{
+	background-color: #eeeeee;
+}
 .container{
 	margin: 0 auto;
 	max-width: 1440px;
@@ -13,14 +15,14 @@
 	background-color: #f6f6f6;
 	height: 800px;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 
 .box2{
 	width: 59.9%;
 	background-color: #eeeeee;
 	height: 800px;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 
 .self-portrait{
@@ -148,6 +150,7 @@ ul li.active a{
 .slider-inner img{
 	display: none;
 	max-width: 250px;
+	border-radius: 10px;
 	/*flex: 0 0 250px;*/
 }
 .slider-inner img.imgActive1{
@@ -209,7 +212,6 @@ ul li.active a{
 .journalbox .card .content{
 	margin-left: 20px;
 	font-family: 'Urbanist', sans-serif;
-	font-size: 1rem;
 	line-height: 150%;
 }
 .journalbox .card .content a:hover{
@@ -259,14 +261,83 @@ ul li.active a{
 	text-decoration: underline;
 }
 
+
 @media (max-width: 1024px){
 	button{
 		width: 80%;
+	}
+	.journalbox .card{
+		flex-direction: column;
+		align-items: center;
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.conferencebox .card{
+		flex-direction: column;
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.slider-inner{
+		max-width: 330px;
+		height: 240px;
+	}
+	.slider-inner img{
+		max-width: 330px;
+	}
+	.imgBx img{
+		max-width: 330px;
+	}
+	.journalbox .card .content{
+		margin-left: 10px;
+	}
+	.conferencebox .card .content{
+		margin-left: 0;
+	}
+	.journalbox .card .content a{
+		font-size: 1.25rem;
+	}
+	.journalbox .card .content p{
+		margin: 8px auto -10px;
+		font-size: 0.75rem;
+	}
+	.conferencebox .card .content a{
+		font-size: 1.25rem;
+	}
+	.conferencebox .card .content p{
+		margin: 8px auto -10px;
+		font-size: 0.75rem;
+	}
+	.prev2{
+		left: 10%;
+		top: 35%;
+	}
+	.next2{
+		right: 10%;
+		top: 35%;
+	}
+	.prev1{
+		left: 10%;
+		top: 35%;
+	}
+	.next1{
+		right: 10%;
+		top: 35%;
 	}
 }
 @media (max-width: 800px){
 	.container{
 		flex-direction: column;
+	}
+	button{
+		padding-top: 1%;
+	}
+	button img{
+		width: 30px;
+	}
+	button a{
+		font-size: 1.5rem;
 	}
 	.box1{
 		width: 100%;
@@ -274,12 +345,80 @@ ul li.active a{
 	.box2{
 		width: 100%;
 	}
+	.journalbox{
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+	}
+	.conferencebox{
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+	}
 	.journalbox .card{
 		flex-direction: column;
+		align-items: center;
+		max-width: 310px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 420px;
+		margin-top: 40px;
+	}
+	.conferencebox .card{
+		flex-direction: column;
+		align-items: center;
+		max-width: 310px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 420px;
+		margin-top: 40px;
+	}
+	.slider-inner{
+		max-width: 290px;
+	}
+	.slider-inner img{
+		max-width: 290px;
+	}
+	.imgBx img{
+		max-width: 290px;
+	}
+	.journalbox .card .content{
+		margin-top: -20px;
+	}
+	.conferencebox .card .content{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.box2 h1{
+		display: none;
+	}
+	.box2 h2{
+		display: none;
+	}
+	ul li a{
+		font-size: 24px;
+		padding: 15px 15px;
+		margin-left: -20px;
 	}
 }
-@media (max-width: 400px){
+@media (max-width: 40em){
+	.journalbox{
+		flex-wrap: wrap;
+	}
 	.journalbox .card{
-		flex-direction: column;
+		margin-top: 60px;
+	}
+	.conferencebox .card{
+		margin-top: 60px;
+	}
+	ul li a{
+		font-size: 24px;
+		padding: 20px 20px;
+	}
+}
+@media (max-width: 420px){
+	button{
+		padding-top: 1.5%;
+	}
+	button img{
+		width: 30px;
 	}
 }
