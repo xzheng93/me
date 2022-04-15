@@ -13,7 +13,7 @@ body{
 .box1{
 	width: 40%;
 	background-color: #f6f6f6;
-	height: 800px;
+	height: 50%;
 	text-align: center;
 	border-radius: 15px;
 }
@@ -42,11 +42,18 @@ body{
 	padding: 8px 0px;
 }
 
+.box1 h2{
+	margin: 0;
+}
+
 .tag{
-	margin: 5px;
+	margin: 10px;
 	font-size: 0.9rem;
 	font-family: 'Urbanist', sans-serif;
 	font-weight: normal;
+}
+.icons{
+	margin: 30px;
 }
 
 button{
@@ -78,6 +85,11 @@ button a{
 	font-size: 1rem;
 	text-indent: 2em;
 	line-height: 150%;
+}
+.PersonalProfile a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
 }
 
 .icons img{
@@ -263,6 +275,9 @@ ul li.active a{
 
 
 @media (max-width: 1024px){
+	.box1{
+		height: 60%;
+	}
 	button{
 		width: 80%;
 	}
@@ -279,13 +294,13 @@ ul li.active a{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.slider-inner{
+	/*.slider-inner{
 		max-width: 330px;
 		height: 240px;
 	}
 	.slider-inner img{
 		max-width: 330px;
-	}
+	}*/
 	.imgBx img{
 		max-width: 330px;
 	}
@@ -309,7 +324,7 @@ ul li.active a{
 		margin: 8px auto -10px;
 		font-size: 0.75rem;
 	}
-	.prev2{
+	/*.prev2{
 		left: 10%;
 		top: 35%;
 	}
@@ -324,7 +339,7 @@ ul li.active a{
 	.next1{
 		right: 10%;
 		top: 35%;
-	}
+	}*/
 }
 
 @media (max-width: 800px){
@@ -347,42 +362,45 @@ ul li.active a{
 		width: 100%;
 	}
 	.journalbox{
+		flex-direction: column;
 		flex-wrap: nowrap;
 		justify-content: space-evenly;
 	}
 	.conferencebox{
+		flex-direction: column;
 		flex-wrap: nowrap;
 		justify-content: space-evenly;
 	}
 	.journalbox .card{
-		flex-direction: column;
+		/*flex-direction: row;*/
 		align-items: center;
-		max-width: 300px;
+		max-width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-		height: 420px;
+		height: 100%;
 		margin-top: 40px;
 	}
 	.conferencebox .card{
 		flex-direction: column;
 		align-items: center;
-		max-width: 300px;
+		max-width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-		height: 420px;
 		margin-top: 40px;
 	}
-	.slider-inner{
+	/*.slider-inner{
 		max-width: 290px;
 	}
 	.slider-inner img{
 		max-width: 290px;
-	}
+	}*/
 	.imgBx img{
-		max-width: 290px;
+		max-width: 100%;
+		/*flex: 0 0 200%;*/
 	}
+	
 	.journalbox .card .content{
-		margin-top: -20px;
+		margin-left: 10px;
 	}
 	.conferencebox .card .content{
 		margin-left: 10px;
@@ -399,7 +417,7 @@ ul li.active a{
 		padding: 15px 15px;
 		margin-left: -20px;
 	}
-	.prev2{
+	/*.prev2{
 		top: 25%;
 	}
 	.next2{
@@ -410,7 +428,7 @@ ul li.active a{
 	}
 	.next1{
 		top: 25%;
-	}
+	}*/
 }
 
 @media (max-width: 40em){
