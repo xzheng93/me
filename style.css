@@ -21,7 +21,7 @@ body{
 .box2{
 	width: 59.9%;
 	background-color: #eeeeee;
-	height: 800px;
+	height: 100%;
 	border-radius: 15px;
 }
 
@@ -284,13 +284,13 @@ ul li.active a{
 	.journalbox .card{
 		flex-direction: column;
 		align-items: center;
-		max-width: 350px;
+		max-width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.conferencebox .card{
 		flex-direction: column;
-		max-width: 350px;
+		max-width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -302,7 +302,7 @@ ul li.active a{
 		max-width: 330px;
 	}*/
 	.imgBx img{
-		max-width: 330px;
+		max-width: 100%;
 	}
 	.journalbox .card .content{
 		margin-left: 10px;
@@ -362,9 +362,11 @@ ul li.active a{
 		width: 100%;
 	}
 	.journalbox{
-		flex-direction: column;
-		flex-wrap: nowrap;
+		/*flex-direction: column;*/
+		position: relative;
+		flex-wrap: wrap;
 		justify-content: space-evenly;
+		display: flex;
 	}
 	.conferencebox{
 		flex-direction: column;
@@ -372,12 +374,11 @@ ul li.active a{
 		justify-content: space-evenly;
 	}
 	.journalbox .card{
-		/*flex-direction: row;*/
 		align-items: center;
-		max-width: 100%;
+		max-width: 250px;
 		margin-left: auto;
 		margin-right: auto;
-		height: 100%;
+		height: 600px;
 		margin-top: 40px;
 	}
 	.conferencebox .card{
@@ -395,16 +396,16 @@ ul li.active a{
 		max-width: 290px;
 	}*/
 	.imgBx img{
-		max-width: 100%;
-		/*flex: 0 0 200%;*/
+		max-width: 250px;
+		flex: 0 0 250px;
 	}
 	
 	.journalbox .card .content{
-		margin-left: 10px;
+		margin-left: 0;
 	}
 	.conferencebox .card .content{
 		margin-left: 10px;
-		margin-top: 10px;
+		margin-top: 0;
 	}
 	.box2 h1{
 		display: none;
@@ -417,6 +418,7 @@ ul li.active a{
 		padding: 15px 15px;
 		margin-left: -20px;
 	}
+	
 	/*.prev2{
 		top: 25%;
 	}
@@ -437,6 +439,8 @@ ul li.active a{
 	}
 	.journalbox .card{
 		margin-top: 60px;
+		max-width: 100%;
+		height: 100%;
 	}
 	.conferencebox .card{
 		margin-top: 60px;
@@ -444,6 +448,9 @@ ul li.active a{
 	ul li a{
 		font-size: 24px;
 		padding: 20px 20px;
+	}
+	.imgBx img{
+		max-width: 100%;
 	}
 }
 @media (max-width: 420px){
