@@ -14,9 +14,12 @@ h1,h2,h3 { font-family:'Source Serif 4',Georgia,'Times New Roman',serif; font-we
 /* ---- home ---- */
 .layout { display:flex; min-height:100vh; align-items:flex-start; }
 aside { width:300px; flex:none; background:var(--panel); border-right:1px solid var(--rule);
-        padding:44px 30px; display:flex; flex-direction:column; gap:22px;
+        padding:34px 30px 28px; display:flex; flex-direction:column; gap:16px;
         position:sticky; top:0; height:100vh; overflow-y:auto; overscroll-behavior:contain; }
-.photo { width:100%; border-radius:3px; border:1px solid var(--rule); display:block; }
+/* Photo shrinks with window height so the whole sidebar fits without scrolling:
+   532px = everything else in the sidebar, 1.19 = portrait height/width. */
+.photo { width:clamp(140px, calc((100vh - 532px) / 1.19), 240px); border-radius:3px;
+         border:1px solid var(--rule); display:block; }
 aside h1 { font-size:25px; line-height:1.2; }
 aside h1 span { display:block; font-size:15px; color:var(--soft); font-weight:400; margin-top:4px; }
 .role { font-size:14.5px; line-height:1.55; color:var(--soft); }
