@@ -5,6 +5,7 @@
 .page-index h1 .name-zh{font:400 21px var(--sans);letter-spacing:3px;color:var(--muted);margin-left:13px;white-space:nowrap}
 .page-index .hero .eyebrow{margin-bottom:15px}
 .profile-role{font-size:17px;color:var(--blue);margin:12px 0 22px}
+.page-index h1.profile-role{font-family:var(--sans);font-size:17px;line-height:1.7;font-weight:400;letter-spacing:0;max-width:none;text-wrap:wrap}
 .profile-bio{max-width:760px}
 .profile-bio p{font-size:17px;line-height:1.85;color:var(--body);margin-top:14px}
 .profile-links{display:flex;gap:9px 20px;flex-wrap:wrap;align-items:center;margin-top:24px;font-size:15px;font-weight:550;color:var(--blue)}
@@ -104,6 +105,7 @@ dialog h2{font-size:17px}
 dialog button{font-size:14px}
 @media(max-width:760px){
  .funding-highlight{grid-template-columns:1fr;gap:18px;padding:20px}
+ .page-index h1.profile-role{font-size:15px}
  .funding-highlight h3{font-size:21px}
  .home-research .section-head{flex-direction:column;align-items:flex-start;gap:12px}
  .home-research .section-head>.text-link{font-size:15px;margin-top:0}
